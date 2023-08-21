@@ -47,9 +47,9 @@ class Keysight81134A(GenericInstrument):
     """
     @param value: need to be within [15000000, 3350000000] Hz
     """
-    def setFrequency(self, value, channel):
+    def setFrequency(self, value):
         assert 15000000. <= value and value <= 3350000000.
-        self.command(":FREQUENCY {val}".format(ch=channel, val=value))
+        self.command(":FREQUENCY {val}".format(val=value))
     
     """
     @param value: need to be one of 1, 2, 4, 8, 16, 32, 64, 128
