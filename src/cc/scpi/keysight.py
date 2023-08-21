@@ -1,7 +1,7 @@
 
 from .generic_instrument import GenericInstrument
 
-class KeySight33600A(GenericInstrument):
+class Keysight33600A(GenericInstrument):
     class Channel:
         CH1 = "1"
         CH2 = "2"
@@ -32,7 +32,7 @@ class KeySight33600A(GenericInstrument):
     def enableOutput(self, channel):
         self.command("OUTPUT{ch} ON".format(ch=channel))
     
-class KeySight81134A(GenericInstrument):
+class Keysight81134A(GenericInstrument):
     class Channel:
         CH1 = "1"
         CH2 = "2"
