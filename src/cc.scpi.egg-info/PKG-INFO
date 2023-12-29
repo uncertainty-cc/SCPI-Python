@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cc.scpi
-Version: 0.0.6
+Version: 2023.12.26
 Summary: Wrapper of SCPI language for controlling various lab instruments.
 Home-page: https://github.com/uncertainty-cc/SCPI-Python
 Author: Uncertainty.
@@ -8,7 +8,7 @@ Author-email: t_k_233@outlook.email
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
-Requires-Python: >=3.6
+Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
