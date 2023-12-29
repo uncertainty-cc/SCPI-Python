@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="cc.scpi",
-    version="0.0.6",
+    version="2023.12.26",
     author="Uncertainty.",
     author_email="t_k_233@outlook.email",
     description="Wrapper of SCPI language for controlling various lab instruments.",
@@ -23,5 +23,5 @@ setuptools.setup(
     install_requires=[],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    python_requires=">=3.6",
+    python_requires=">=3.8",
 )
