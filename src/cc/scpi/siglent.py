@@ -17,7 +17,7 @@ class SiglentSPD3303X(GenericInstrument):
         CH1 = "CH1"
         CH2 = "CH2"
     
-    def getCurrent(self, channel: Channel):
+    def get_current(self, channel: Channel):
         """
         Get the current reading of the output.
 
@@ -29,7 +29,7 @@ class SiglentSPD3303X(GenericInstrument):
         """
         return float(self.query("MEASURE:CURRENT? {ch}".format(ch=channel)))
     
-    def getVoltage(self, channel: Channel):
+    def get_voltage(self, channel: Channel):
         """
         Get the voltage reading of the output.
         
@@ -41,7 +41,7 @@ class SiglentSPD3303X(GenericInstrument):
         """
         return float(self.query("MEASURE:VOLTAGE? {ch}".format(ch=channel)))
     
-    def getPower(self, channel: Channel):
+    def get_power(self, channel: Channel):
         """
         Get the power reading of the output.
 
@@ -53,7 +53,7 @@ class SiglentSPD3303X(GenericInstrument):
         """
         return float(self.query("MEASURE:POWER? {ch}".format(ch=channel)))
     
-    def setCurrent(self, value: float, channel: Channel):
+    def set_current(self, value: float, channel: Channel):
         """
         Set the current limit of the output.
         
@@ -63,7 +63,7 @@ class SiglentSPD3303X(GenericInstrument):
         """
         self.command("{ch}:CURRENT {val}".format(ch=channel, val=value))
         
-    def setVoltage(self, value: float, channel: Channel):
+    def set_voltage(self, value: float, channel: Channel):
         """
         Set the voltage of the output.
 
@@ -73,7 +73,7 @@ class SiglentSPD3303X(GenericInstrument):
         """
         self.command("{ch}:VOLTAGE {val}".format(ch=channel, val=value))
 
-    def disableOutput(self, channel: Channel):
+    def disable_output(self, channel: Channel):
         """
         Disable the output.
         
@@ -82,7 +82,7 @@ class SiglentSPD3303X(GenericInstrument):
         """
         self.command("OUTPUT {ch},OFF".format(ch=channel))
 
-    def enableOutput(self, channel: Channel):
+    def enable_output(self, channel: Channel):
         """
         Enable the output.
 

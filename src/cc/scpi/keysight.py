@@ -23,7 +23,7 @@ class Keysight33600A(GenericInstrument):
         CH1 = "1"
         CH2 = "2"
     
-    def setFunction(self, function: Function, channel: Channel):
+    def set_function(self, function: Function, channel: Channel):
         """
         Set function of both channels
 
@@ -33,7 +33,7 @@ class Keysight33600A(GenericInstrument):
         """
         self.command("SOURCE{ch}:FUNCTION {func}".format(ch=channel, func=function))
     
-    def setFrequency(self, value: float, channel: Channel):
+    def set_frequency(self, value: float, channel: Channel):
         """
         Set frequency of both channels
         
@@ -43,7 +43,7 @@ class Keysight33600A(GenericInstrument):
         """
         self.command("SOURCE{ch}:FREQUENCY {val}".format(ch=channel, val=value))
     
-    def setVoltageHigh(self, value: float, channel: Channel):
+    def set_high_voltage(self, value: float, channel: Channel):
         """
         Set the voltage level of the high state of the output waveform.
 
@@ -53,7 +53,7 @@ class Keysight33600A(GenericInstrument):
         """
         self.command("SOURCE{ch}:VOLTAGE:HIGH {val}".format(ch=channel, val=value))
     
-    def setVoltageLow(self, value: float, channel: Channel):
+    def set_low_voltage(self, value: float, channel: Channel):
         """
         Set the voltage level of the low state of the output waveform.
 
@@ -63,7 +63,7 @@ class Keysight33600A(GenericInstrument):
         """
         self.command("SOURCE{ch}:VOLTAGE:LOW {val}".format(ch=channel, val=value))
     
-    def setOutputLoad(self, value: float, channel: Channel):
+    def set_output_load(self, value: float, channel: Channel):
         """
         Set the output load impedance.
 
@@ -75,7 +75,7 @@ class Keysight33600A(GenericInstrument):
             value = "INFINITY"
         self.command("OUTPUT{ch}:LOAD {val}".format(ch=channel, val=value))
 
-    def disableOutput(self, channel: Channel):
+    def disable_output(self, channel: Channel):
         """
         Disable the output of the specified channel.
 
@@ -84,7 +84,7 @@ class Keysight33600A(GenericInstrument):
         """
         self.command("OUTPUT{ch} OFF".format(ch=channel))
 
-    def enableOutput(self, channel: Channel):
+    def enable_output(self, channel: Channel):
         """
         Enable the output of the specified channel.
 

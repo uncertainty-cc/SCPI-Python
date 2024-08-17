@@ -58,7 +58,7 @@ class GenericInstrument:
         data = ser.receive()
         return data.decode()
 
-    def getIDN(self):
+    def get_idn(self):
         """
         Get the instrument identification number
 
@@ -67,12 +67,12 @@ class GenericInstrument:
         """
         return self.query("*IDN?")
 
-    def getInstrumentIdentification(self):
+    def get_instrument_identification(self):
         """
-        Get the instrument identification number. This is an alias for `getIDN()`.
+        Get the instrument identification number. This is an alias for `get_idn()`.
 
         Returns:
             the instrument identification
         """
-        return self.getIDN()
+        return self.get_idn()
     
