@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 14.6.0"/>
+    <meta name="generator" content="pdoc 14.6.1"/>
     <title>cc.scpi.keysight API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -106,37 +106,37 @@
 
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.setFunction">setFunction</a>
+                                <a class="function" href="#Keysight81134A.set_function">set_function</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.setFrequency">setFrequency</a>
+                                <a class="function" href="#Keysight81134A.set_frequency">set_frequency</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.setFrequencyDivisor">setFrequencyDivisor</a>
+                                <a class="function" href="#Keysight81134A.set_frequency_divisor">set_frequency_divisor</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.setVoltageHigh">setVoltageHigh</a>
+                                <a class="function" href="#Keysight81134A.set_voltage_high">set_voltage_high</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.setVoltageLow">setVoltageLow</a>
+                                <a class="function" href="#Keysight81134A.set_voltage_low">set_voltage_low</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.disableOutput">disableOutput</a>
+                                <a class="function" href="#Keysight81134A.disable_output">disable_output</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.disableOutputP">disableOutputP</a>
+                                <a class="function" href="#Keysight81134A.disable_output_p">disable_output_p</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.disableOutputN">disableOutputN</a>
+                                <a class="function" href="#Keysight81134A.disable_output_n">disable_output_n</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.enableOutput">enableOutput</a>
+                                <a class="function" href="#Keysight81134A.enable_output">enable_output</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.enableOutputP">enableOutputP</a>
+                                <a class="function" href="#Keysight81134A.enable_output_p">enable_output_p</a>
                         </li>
                         <li>
-                                <a class="function" href="#Keysight81134A.enableOutputN">enableOutputN</a>
+                                <a class="function" href="#Keysight81134A.enable_output_n">enable_output_n</a>
                         </li>
                 </ul>
 
@@ -280,7 +280,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-116"><a href="#L-116"><span class="linenos">116</span></a>        <span class="n">SQUARE</span> <span class="o">=</span> <span class="s2">&quot;SQUARE&quot;</span>
 </span><span id="L-117"><a href="#L-117"><span class="linenos">117</span></a>        <span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;DATA&quot;</span>
 </span><span id="L-118"><a href="#L-118"><span class="linenos">118</span></a>    
-</span><span id="L-119"><a href="#L-119"><span class="linenos">119</span></a>    <span class="k">def</span> <span class="nf">setFunction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="n">Function</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-119"><a href="#L-119"><span class="linenos">119</span></a>    <span class="k">def</span> <span class="nf">set_function</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="n">Function</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-120"><a href="#L-120"><span class="linenos">120</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-121"><a href="#L-121"><span class="linenos">121</span></a><span class="sd">        Set function of both channels</span>
 </span><span id="L-122"><a href="#L-122"><span class="linenos">122</span></a>
@@ -290,7 +290,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-126"><a href="#L-126"><span class="linenos">126</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-127"><a href="#L-127"><span class="linenos">127</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:FUNCTION:MODE</span><span class="si">{ch}</span><span class="s2"> </span><span class="si">{func}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="n">function</span><span class="p">))</span>
 </span><span id="L-128"><a href="#L-128"><span class="linenos">128</span></a>    
-</span><span id="L-129"><a href="#L-129"><span class="linenos">129</span></a>    <span class="k">def</span> <span class="nf">setFrequency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+</span><span id="L-129"><a href="#L-129"><span class="linenos">129</span></a>    <span class="k">def</span> <span class="nf">set_frequency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 </span><span id="L-130"><a href="#L-130"><span class="linenos">130</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-131"><a href="#L-131"><span class="linenos">131</span></a><span class="sd">        Set frequency of both channels</span>
 </span><span id="L-132"><a href="#L-132"><span class="linenos">132</span></a>
@@ -300,7 +300,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-136"><a href="#L-136"><span class="linenos">136</span></a>        <span class="k">assert</span> <span class="mf">15000000.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">3350000000.</span>
 </span><span id="L-137"><a href="#L-137"><span class="linenos">137</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:FREQUENCY </span><span class="si">{val}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span><span id="L-138"><a href="#L-138"><span class="linenos">138</span></a>    
-</span><span id="L-139"><a href="#L-139"><span class="linenos">139</span></a>    <span class="k">def</span> <span class="nf">setFrequencyDivisor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-139"><a href="#L-139"><span class="linenos">139</span></a>    <span class="k">def</span> <span class="nf">set_frequency_divisor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-140"><a href="#L-140"><span class="linenos">140</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-141"><a href="#L-141"><span class="linenos">141</span></a><span class="sd">        Set the frequency divider of both channels</span>
 </span><span id="L-142"><a href="#L-142"><span class="linenos">142</span></a><span class="sd">        </span>
@@ -310,7 +310,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-146"><a href="#L-146"><span class="linenos">146</span></a>        <span class="k">assert</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">],</span> <span class="s2">&quot;Invalid frequency divisor&quot;</span>
 </span><span id="L-147"><a href="#L-147"><span class="linenos">147</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:DIVIDER </span><span class="si">{val}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span><span id="L-148"><a href="#L-148"><span class="linenos">148</span></a>    
-</span><span id="L-149"><a href="#L-149"><span class="linenos">149</span></a>    <span class="k">def</span> <span class="nf">setVoltageHigh</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-149"><a href="#L-149"><span class="linenos">149</span></a>    <span class="k">def</span> <span class="nf">set_voltage_high</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-150"><a href="#L-150"><span class="linenos">150</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-151"><a href="#L-151"><span class="linenos">151</span></a><span class="sd">        Set the voltage level of the high state of the output waveform.</span>
 </span><span id="L-152"><a href="#L-152"><span class="linenos">152</span></a><span class="sd">        </span>
@@ -321,7 +321,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-157"><a href="#L-157"><span class="linenos">157</span></a>        <span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">2.</span>
 </span><span id="L-158"><a href="#L-158"><span class="linenos">158</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:VOLTAGE</span><span class="si">{ch}</span><span class="s2">:HIGH </span><span class="si">{val}</span><span class="s2">V&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span><span id="L-159"><a href="#L-159"><span class="linenos">159</span></a>
-</span><span id="L-160"><a href="#L-160"><span class="linenos">160</span></a>    <span class="k">def</span> <span class="nf">setVoltageLow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-160"><a href="#L-160"><span class="linenos">160</span></a>    <span class="k">def</span> <span class="nf">set_voltage_low</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-161"><a href="#L-161"><span class="linenos">161</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-162"><a href="#L-162"><span class="linenos">162</span></a><span class="sd">        Set the voltage level of the high state of the output waveform.</span>
 </span><span id="L-163"><a href="#L-163"><span class="linenos">163</span></a><span class="sd">        </span>
@@ -332,7 +332,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-168"><a href="#L-168"><span class="linenos">168</span></a>        <span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">2.</span>
 </span><span id="L-169"><a href="#L-169"><span class="linenos">169</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:VOLTAGE</span><span class="si">{ch}</span><span class="s2">:LOW </span><span class="si">{val}</span><span class="s2">V&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span><span id="L-170"><a href="#L-170"><span class="linenos">170</span></a>    
-</span><span id="L-171"><a href="#L-171"><span class="linenos">171</span></a>    <span class="k">def</span> <span class="nf">disableOutput</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-171"><a href="#L-171"><span class="linenos">171</span></a>    <span class="k">def</span> <span class="nf">disable_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-172"><a href="#L-172"><span class="linenos">172</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-173"><a href="#L-173"><span class="linenos">173</span></a><span class="sd">        Disable the output of both phases of the specified channel.</span>
 </span><span id="L-174"><a href="#L-174"><span class="linenos">174</span></a>
@@ -341,7 +341,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-177"><a href="#L-177"><span class="linenos">177</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-178"><a href="#L-178"><span class="linenos">178</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2"> OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="L-179"><a href="#L-179"><span class="linenos">179</span></a>
-</span><span id="L-180"><a href="#L-180"><span class="linenos">180</span></a>    <span class="k">def</span> <span class="nf">disableOutputP</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-180"><a href="#L-180"><span class="linenos">180</span></a>    <span class="k">def</span> <span class="nf">disable_output_p</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-181"><a href="#L-181"><span class="linenos">181</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-182"><a href="#L-182"><span class="linenos">182</span></a><span class="sd">        Disable the output of the positive phase of the specified channel.</span>
 </span><span id="L-183"><a href="#L-183"><span class="linenos">183</span></a>
@@ -350,7 +350,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-186"><a href="#L-186"><span class="linenos">186</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-187"><a href="#L-187"><span class="linenos">187</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:POS OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="L-188"><a href="#L-188"><span class="linenos">188</span></a>
-</span><span id="L-189"><a href="#L-189"><span class="linenos">189</span></a>    <span class="k">def</span> <span class="nf">disableOutputN</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-189"><a href="#L-189"><span class="linenos">189</span></a>    <span class="k">def</span> <span class="nf">disable_output_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-190"><a href="#L-190"><span class="linenos">190</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-191"><a href="#L-191"><span class="linenos">191</span></a><span class="sd">        Disable the output of the negative phase of the specified channel.</span>
 </span><span id="L-192"><a href="#L-192"><span class="linenos">192</span></a>
@@ -359,7 +359,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-195"><a href="#L-195"><span class="linenos">195</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-196"><a href="#L-196"><span class="linenos">196</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:NEG OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="L-197"><a href="#L-197"><span class="linenos">197</span></a>
-</span><span id="L-198"><a href="#L-198"><span class="linenos">198</span></a>    <span class="k">def</span> <span class="nf">enableOutput</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-198"><a href="#L-198"><span class="linenos">198</span></a>    <span class="k">def</span> <span class="nf">enable_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-199"><a href="#L-199"><span class="linenos">199</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-200"><a href="#L-200"><span class="linenos">200</span></a><span class="sd">        Enable the output of both phases of the specified channel.</span>
 </span><span id="L-201"><a href="#L-201"><span class="linenos">201</span></a>
@@ -368,7 +368,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-204"><a href="#L-204"><span class="linenos">204</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-205"><a href="#L-205"><span class="linenos">205</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2"> ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="L-206"><a href="#L-206"><span class="linenos">206</span></a>
-</span><span id="L-207"><a href="#L-207"><span class="linenos">207</span></a>    <span class="k">def</span> <span class="nf">enableOutputP</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-207"><a href="#L-207"><span class="linenos">207</span></a>    <span class="k">def</span> <span class="nf">enable_output_p</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-208"><a href="#L-208"><span class="linenos">208</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-209"><a href="#L-209"><span class="linenos">209</span></a><span class="sd">        Enable the output of the positive phase of the specified channel.</span>
 </span><span id="L-210"><a href="#L-210"><span class="linenos">210</span></a>
@@ -377,7 +377,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="L-213"><a href="#L-213"><span class="linenos">213</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="L-214"><a href="#L-214"><span class="linenos">214</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:POS ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="L-215"><a href="#L-215"><span class="linenos">215</span></a>
-</span><span id="L-216"><a href="#L-216"><span class="linenos">216</span></a>    <span class="k">def</span> <span class="nf">enableOutputN</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="L-216"><a href="#L-216"><span class="linenos">216</span></a>    <span class="k">def</span> <span class="nf">enable_output_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="L-217"><a href="#L-217"><span class="linenos">217</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="L-218"><a href="#L-218"><span class="linenos">218</span></a><span class="sd">        Enable the output of the negative phase of the specified channel.</span>
 </span><span id="L-219"><a href="#L-219"><span class="linenos">219</span></a>
@@ -882,7 +882,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-118"><a href="#Keysight81134A-118"><span class="linenos">118</span></a>        <span class="n">SQUARE</span> <span class="o">=</span> <span class="s2">&quot;SQUARE&quot;</span>
 </span><span id="Keysight81134A-119"><a href="#Keysight81134A-119"><span class="linenos">119</span></a>        <span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;DATA&quot;</span>
 </span><span id="Keysight81134A-120"><a href="#Keysight81134A-120"><span class="linenos">120</span></a>    
-</span><span id="Keysight81134A-121"><a href="#Keysight81134A-121"><span class="linenos">121</span></a>    <span class="k">def</span> <span class="nf">setFunction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="n">Function</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-121"><a href="#Keysight81134A-121"><span class="linenos">121</span></a>    <span class="k">def</span> <span class="nf">set_function</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="n">Function</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-122"><a href="#Keysight81134A-122"><span class="linenos">122</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-123"><a href="#Keysight81134A-123"><span class="linenos">123</span></a><span class="sd">        Set function of both channels</span>
 </span><span id="Keysight81134A-124"><a href="#Keysight81134A-124"><span class="linenos">124</span></a>
@@ -892,7 +892,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-128"><a href="#Keysight81134A-128"><span class="linenos">128</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-129"><a href="#Keysight81134A-129"><span class="linenos">129</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:FUNCTION:MODE</span><span class="si">{ch}</span><span class="s2"> </span><span class="si">{func}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="n">function</span><span class="p">))</span>
 </span><span id="Keysight81134A-130"><a href="#Keysight81134A-130"><span class="linenos">130</span></a>    
-</span><span id="Keysight81134A-131"><a href="#Keysight81134A-131"><span class="linenos">131</span></a>    <span class="k">def</span> <span class="nf">setFrequency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+</span><span id="Keysight81134A-131"><a href="#Keysight81134A-131"><span class="linenos">131</span></a>    <span class="k">def</span> <span class="nf">set_frequency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 </span><span id="Keysight81134A-132"><a href="#Keysight81134A-132"><span class="linenos">132</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-133"><a href="#Keysight81134A-133"><span class="linenos">133</span></a><span class="sd">        Set frequency of both channels</span>
 </span><span id="Keysight81134A-134"><a href="#Keysight81134A-134"><span class="linenos">134</span></a>
@@ -902,7 +902,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-138"><a href="#Keysight81134A-138"><span class="linenos">138</span></a>        <span class="k">assert</span> <span class="mf">15000000.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">3350000000.</span>
 </span><span id="Keysight81134A-139"><a href="#Keysight81134A-139"><span class="linenos">139</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:FREQUENCY </span><span class="si">{val}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span><span id="Keysight81134A-140"><a href="#Keysight81134A-140"><span class="linenos">140</span></a>    
-</span><span id="Keysight81134A-141"><a href="#Keysight81134A-141"><span class="linenos">141</span></a>    <span class="k">def</span> <span class="nf">setFrequencyDivisor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-141"><a href="#Keysight81134A-141"><span class="linenos">141</span></a>    <span class="k">def</span> <span class="nf">set_frequency_divisor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-142"><a href="#Keysight81134A-142"><span class="linenos">142</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-143"><a href="#Keysight81134A-143"><span class="linenos">143</span></a><span class="sd">        Set the frequency divider of both channels</span>
 </span><span id="Keysight81134A-144"><a href="#Keysight81134A-144"><span class="linenos">144</span></a><span class="sd">        </span>
@@ -912,7 +912,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-148"><a href="#Keysight81134A-148"><span class="linenos">148</span></a>        <span class="k">assert</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">],</span> <span class="s2">&quot;Invalid frequency divisor&quot;</span>
 </span><span id="Keysight81134A-149"><a href="#Keysight81134A-149"><span class="linenos">149</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:DIVIDER </span><span class="si">{val}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span><span id="Keysight81134A-150"><a href="#Keysight81134A-150"><span class="linenos">150</span></a>    
-</span><span id="Keysight81134A-151"><a href="#Keysight81134A-151"><span class="linenos">151</span></a>    <span class="k">def</span> <span class="nf">setVoltageHigh</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-151"><a href="#Keysight81134A-151"><span class="linenos">151</span></a>    <span class="k">def</span> <span class="nf">set_voltage_high</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-152"><a href="#Keysight81134A-152"><span class="linenos">152</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-153"><a href="#Keysight81134A-153"><span class="linenos">153</span></a><span class="sd">        Set the voltage level of the high state of the output waveform.</span>
 </span><span id="Keysight81134A-154"><a href="#Keysight81134A-154"><span class="linenos">154</span></a><span class="sd">        </span>
@@ -923,7 +923,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-159"><a href="#Keysight81134A-159"><span class="linenos">159</span></a>        <span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">2.</span>
 </span><span id="Keysight81134A-160"><a href="#Keysight81134A-160"><span class="linenos">160</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:VOLTAGE</span><span class="si">{ch}</span><span class="s2">:HIGH </span><span class="si">{val}</span><span class="s2">V&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span><span id="Keysight81134A-161"><a href="#Keysight81134A-161"><span class="linenos">161</span></a>
-</span><span id="Keysight81134A-162"><a href="#Keysight81134A-162"><span class="linenos">162</span></a>    <span class="k">def</span> <span class="nf">setVoltageLow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-162"><a href="#Keysight81134A-162"><span class="linenos">162</span></a>    <span class="k">def</span> <span class="nf">set_voltage_low</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-163"><a href="#Keysight81134A-163"><span class="linenos">163</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-164"><a href="#Keysight81134A-164"><span class="linenos">164</span></a><span class="sd">        Set the voltage level of the high state of the output waveform.</span>
 </span><span id="Keysight81134A-165"><a href="#Keysight81134A-165"><span class="linenos">165</span></a><span class="sd">        </span>
@@ -934,7 +934,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-170"><a href="#Keysight81134A-170"><span class="linenos">170</span></a>        <span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">2.</span>
 </span><span id="Keysight81134A-171"><a href="#Keysight81134A-171"><span class="linenos">171</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:VOLTAGE</span><span class="si">{ch}</span><span class="s2">:LOW </span><span class="si">{val}</span><span class="s2">V&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span><span id="Keysight81134A-172"><a href="#Keysight81134A-172"><span class="linenos">172</span></a>    
-</span><span id="Keysight81134A-173"><a href="#Keysight81134A-173"><span class="linenos">173</span></a>    <span class="k">def</span> <span class="nf">disableOutput</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-173"><a href="#Keysight81134A-173"><span class="linenos">173</span></a>    <span class="k">def</span> <span class="nf">disable_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-174"><a href="#Keysight81134A-174"><span class="linenos">174</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-175"><a href="#Keysight81134A-175"><span class="linenos">175</span></a><span class="sd">        Disable the output of both phases of the specified channel.</span>
 </span><span id="Keysight81134A-176"><a href="#Keysight81134A-176"><span class="linenos">176</span></a>
@@ -943,7 +943,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-179"><a href="#Keysight81134A-179"><span class="linenos">179</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-180"><a href="#Keysight81134A-180"><span class="linenos">180</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2"> OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="Keysight81134A-181"><a href="#Keysight81134A-181"><span class="linenos">181</span></a>
-</span><span id="Keysight81134A-182"><a href="#Keysight81134A-182"><span class="linenos">182</span></a>    <span class="k">def</span> <span class="nf">disableOutputP</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-182"><a href="#Keysight81134A-182"><span class="linenos">182</span></a>    <span class="k">def</span> <span class="nf">disable_output_p</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-183"><a href="#Keysight81134A-183"><span class="linenos">183</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-184"><a href="#Keysight81134A-184"><span class="linenos">184</span></a><span class="sd">        Disable the output of the positive phase of the specified channel.</span>
 </span><span id="Keysight81134A-185"><a href="#Keysight81134A-185"><span class="linenos">185</span></a>
@@ -952,7 +952,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-188"><a href="#Keysight81134A-188"><span class="linenos">188</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-189"><a href="#Keysight81134A-189"><span class="linenos">189</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:POS OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="Keysight81134A-190"><a href="#Keysight81134A-190"><span class="linenos">190</span></a>
-</span><span id="Keysight81134A-191"><a href="#Keysight81134A-191"><span class="linenos">191</span></a>    <span class="k">def</span> <span class="nf">disableOutputN</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-191"><a href="#Keysight81134A-191"><span class="linenos">191</span></a>    <span class="k">def</span> <span class="nf">disable_output_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-192"><a href="#Keysight81134A-192"><span class="linenos">192</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-193"><a href="#Keysight81134A-193"><span class="linenos">193</span></a><span class="sd">        Disable the output of the negative phase of the specified channel.</span>
 </span><span id="Keysight81134A-194"><a href="#Keysight81134A-194"><span class="linenos">194</span></a>
@@ -961,7 +961,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-197"><a href="#Keysight81134A-197"><span class="linenos">197</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-198"><a href="#Keysight81134A-198"><span class="linenos">198</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:NEG OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="Keysight81134A-199"><a href="#Keysight81134A-199"><span class="linenos">199</span></a>
-</span><span id="Keysight81134A-200"><a href="#Keysight81134A-200"><span class="linenos">200</span></a>    <span class="k">def</span> <span class="nf">enableOutput</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-200"><a href="#Keysight81134A-200"><span class="linenos">200</span></a>    <span class="k">def</span> <span class="nf">enable_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-201"><a href="#Keysight81134A-201"><span class="linenos">201</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-202"><a href="#Keysight81134A-202"><span class="linenos">202</span></a><span class="sd">        Enable the output of both phases of the specified channel.</span>
 </span><span id="Keysight81134A-203"><a href="#Keysight81134A-203"><span class="linenos">203</span></a>
@@ -970,7 +970,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-206"><a href="#Keysight81134A-206"><span class="linenos">206</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-207"><a href="#Keysight81134A-207"><span class="linenos">207</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2"> ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="Keysight81134A-208"><a href="#Keysight81134A-208"><span class="linenos">208</span></a>
-</span><span id="Keysight81134A-209"><a href="#Keysight81134A-209"><span class="linenos">209</span></a>    <span class="k">def</span> <span class="nf">enableOutputP</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-209"><a href="#Keysight81134A-209"><span class="linenos">209</span></a>    <span class="k">def</span> <span class="nf">enable_output_p</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-210"><a href="#Keysight81134A-210"><span class="linenos">210</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-211"><a href="#Keysight81134A-211"><span class="linenos">211</span></a><span class="sd">        Enable the output of the positive phase of the specified channel.</span>
 </span><span id="Keysight81134A-212"><a href="#Keysight81134A-212"><span class="linenos">212</span></a>
@@ -979,7 +979,7 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </span><span id="Keysight81134A-215"><a href="#Keysight81134A-215"><span class="linenos">215</span></a><span class="sd">        &quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-216"><a href="#Keysight81134A-216"><span class="linenos">216</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:POS ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span><span id="Keysight81134A-217"><a href="#Keysight81134A-217"><span class="linenos">217</span></a>
-</span><span id="Keysight81134A-218"><a href="#Keysight81134A-218"><span class="linenos">218</span></a>    <span class="k">def</span> <span class="nf">enableOutputN</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A-218"><a href="#Keysight81134A-218"><span class="linenos">218</span></a>    <span class="k">def</span> <span class="nf">enable_output_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
 </span><span id="Keysight81134A-219"><a href="#Keysight81134A-219"><span class="linenos">219</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="Keysight81134A-220"><a href="#Keysight81134A-220"><span class="linenos">220</span></a><span class="sd">        Enable the output of the negative phase of the specified channel.</span>
 </span><span id="Keysight81134A-221"><a href="#Keysight81134A-221"><span class="linenos">221</span></a>
@@ -998,26 +998,26 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 </div>
 
 
-                            <div id="Keysight81134A.setFunction" class="classattr">
-                                        <input id="Keysight81134A.setFunction-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.set_function" class="classattr">
+                                        <input id="Keysight81134A.set_function-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">setFunction</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">function</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Function">Keysight81134A.Function</a></span>,</span><span class="param">	<span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_function</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">function</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Function">Keysight81134A.Function</a></span>,</span><span class="param">	<span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.setFunction-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.set_function-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.setFunction"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.setFunction-121"><a href="#Keysight81134A.setFunction-121"><span class="linenos">121</span></a>    <span class="k">def</span> <span class="nf">setFunction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="n">Function</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.setFunction-122"><a href="#Keysight81134A.setFunction-122"><span class="linenos">122</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setFunction-123"><a href="#Keysight81134A.setFunction-123"><span class="linenos">123</span></a><span class="sd">        Set function of both channels</span>
-</span><span id="Keysight81134A.setFunction-124"><a href="#Keysight81134A.setFunction-124"><span class="linenos">124</span></a>
-</span><span id="Keysight81134A.setFunction-125"><a href="#Keysight81134A.setFunction-125"><span class="linenos">125</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.setFunction-126"><a href="#Keysight81134A.setFunction-126"><span class="linenos">126</span></a><span class="sd">            function: the target function</span>
-</span><span id="Keysight81134A.setFunction-127"><a href="#Keysight81134A.setFunction-127"><span class="linenos">127</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.setFunction-128"><a href="#Keysight81134A.setFunction-128"><span class="linenos">128</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setFunction-129"><a href="#Keysight81134A.setFunction-129"><span class="linenos">129</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:FUNCTION:MODE</span><span class="si">{ch}</span><span class="s2"> </span><span class="si">{func}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="n">function</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.set_function"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.set_function-121"><a href="#Keysight81134A.set_function-121"><span class="linenos">121</span></a>    <span class="k">def</span> <span class="nf">set_function</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="n">Function</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.set_function-122"><a href="#Keysight81134A.set_function-122"><span class="linenos">122</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_function-123"><a href="#Keysight81134A.set_function-123"><span class="linenos">123</span></a><span class="sd">        Set function of both channels</span>
+</span><span id="Keysight81134A.set_function-124"><a href="#Keysight81134A.set_function-124"><span class="linenos">124</span></a>
+</span><span id="Keysight81134A.set_function-125"><a href="#Keysight81134A.set_function-125"><span class="linenos">125</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.set_function-126"><a href="#Keysight81134A.set_function-126"><span class="linenos">126</span></a><span class="sd">            function: the target function</span>
+</span><span id="Keysight81134A.set_function-127"><a href="#Keysight81134A.set_function-127"><span class="linenos">127</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.set_function-128"><a href="#Keysight81134A.set_function-128"><span class="linenos">128</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_function-129"><a href="#Keysight81134A.set_function-129"><span class="linenos">129</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:FUNCTION:MODE</span><span class="si">{ch}</span><span class="s2"> </span><span class="si">{func}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="n">function</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1033,26 +1033,26 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.setFrequency" class="classattr">
-                                        <input id="Keysight81134A.setFrequency-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.set_frequency" class="classattr">
+                                        <input id="Keysight81134A.set_frequency-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">setFrequency</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">int</span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_frequency</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">int</span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.setFrequency-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.set_frequency-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.setFrequency"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.setFrequency-131"><a href="#Keysight81134A.setFrequency-131"><span class="linenos">131</span></a>    <span class="k">def</span> <span class="nf">setFrequency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-</span><span id="Keysight81134A.setFrequency-132"><a href="#Keysight81134A.setFrequency-132"><span class="linenos">132</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setFrequency-133"><a href="#Keysight81134A.setFrequency-133"><span class="linenos">133</span></a><span class="sd">        Set frequency of both channels</span>
-</span><span id="Keysight81134A.setFrequency-134"><a href="#Keysight81134A.setFrequency-134"><span class="linenos">134</span></a>
-</span><span id="Keysight81134A.setFrequency-135"><a href="#Keysight81134A.setFrequency-135"><span class="linenos">135</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.setFrequency-136"><a href="#Keysight81134A.setFrequency-136"><span class="linenos">136</span></a><span class="sd">            value: the target frequency value in Hz. The value must be within [15000000, 3350000000] Hz.</span>
-</span><span id="Keysight81134A.setFrequency-137"><a href="#Keysight81134A.setFrequency-137"><span class="linenos">137</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setFrequency-138"><a href="#Keysight81134A.setFrequency-138"><span class="linenos">138</span></a>        <span class="k">assert</span> <span class="mf">15000000.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">3350000000.</span>
-</span><span id="Keysight81134A.setFrequency-139"><a href="#Keysight81134A.setFrequency-139"><span class="linenos">139</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:FREQUENCY </span><span class="si">{val}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.set_frequency"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.set_frequency-131"><a href="#Keysight81134A.set_frequency-131"><span class="linenos">131</span></a>    <span class="k">def</span> <span class="nf">set_frequency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+</span><span id="Keysight81134A.set_frequency-132"><a href="#Keysight81134A.set_frequency-132"><span class="linenos">132</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_frequency-133"><a href="#Keysight81134A.set_frequency-133"><span class="linenos">133</span></a><span class="sd">        Set frequency of both channels</span>
+</span><span id="Keysight81134A.set_frequency-134"><a href="#Keysight81134A.set_frequency-134"><span class="linenos">134</span></a>
+</span><span id="Keysight81134A.set_frequency-135"><a href="#Keysight81134A.set_frequency-135"><span class="linenos">135</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.set_frequency-136"><a href="#Keysight81134A.set_frequency-136"><span class="linenos">136</span></a><span class="sd">            value: the target frequency value in Hz. The value must be within [15000000, 3350000000] Hz.</span>
+</span><span id="Keysight81134A.set_frequency-137"><a href="#Keysight81134A.set_frequency-137"><span class="linenos">137</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_frequency-138"><a href="#Keysight81134A.set_frequency-138"><span class="linenos">138</span></a>        <span class="k">assert</span> <span class="mf">15000000.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">3350000000.</span>
+</span><span id="Keysight81134A.set_frequency-139"><a href="#Keysight81134A.set_frequency-139"><span class="linenos">139</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:FREQUENCY </span><span class="si">{val}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1067,26 +1067,26 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.setFrequencyDivisor" class="classattr">
-                                        <input id="Keysight81134A.setFrequencyDivisor-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.set_frequency_divisor" class="classattr">
+                                        <input id="Keysight81134A.set_frequency_divisor-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">setFrequencyDivisor</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">int</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_frequency_divisor</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">int</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.setFrequencyDivisor-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.set_frequency_divisor-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.setFrequencyDivisor"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.setFrequencyDivisor-141"><a href="#Keysight81134A.setFrequencyDivisor-141"><span class="linenos">141</span></a>    <span class="k">def</span> <span class="nf">setFrequencyDivisor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.setFrequencyDivisor-142"><a href="#Keysight81134A.setFrequencyDivisor-142"><span class="linenos">142</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setFrequencyDivisor-143"><a href="#Keysight81134A.setFrequencyDivisor-143"><span class="linenos">143</span></a><span class="sd">        Set the frequency divider of both channels</span>
-</span><span id="Keysight81134A.setFrequencyDivisor-144"><a href="#Keysight81134A.setFrequencyDivisor-144"><span class="linenos">144</span></a><span class="sd">        </span>
-</span><span id="Keysight81134A.setFrequencyDivisor-145"><a href="#Keysight81134A.setFrequencyDivisor-145"><span class="linenos">145</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.setFrequencyDivisor-146"><a href="#Keysight81134A.setFrequencyDivisor-146"><span class="linenos">146</span></a><span class="sd">            value: the target frequency divider value. The value must be one of 1, 2, 4, 8, 16, 32, 64, 128</span>
-</span><span id="Keysight81134A.setFrequencyDivisor-147"><a href="#Keysight81134A.setFrequencyDivisor-147"><span class="linenos">147</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setFrequencyDivisor-148"><a href="#Keysight81134A.setFrequencyDivisor-148"><span class="linenos">148</span></a>        <span class="k">assert</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">],</span> <span class="s2">&quot;Invalid frequency divisor&quot;</span>
-</span><span id="Keysight81134A.setFrequencyDivisor-149"><a href="#Keysight81134A.setFrequencyDivisor-149"><span class="linenos">149</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:DIVIDER </span><span class="si">{val}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.set_frequency_divisor"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.set_frequency_divisor-141"><a href="#Keysight81134A.set_frequency_divisor-141"><span class="linenos">141</span></a>    <span class="k">def</span> <span class="nf">set_frequency_divisor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.set_frequency_divisor-142"><a href="#Keysight81134A.set_frequency_divisor-142"><span class="linenos">142</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_frequency_divisor-143"><a href="#Keysight81134A.set_frequency_divisor-143"><span class="linenos">143</span></a><span class="sd">        Set the frequency divider of both channels</span>
+</span><span id="Keysight81134A.set_frequency_divisor-144"><a href="#Keysight81134A.set_frequency_divisor-144"><span class="linenos">144</span></a><span class="sd">        </span>
+</span><span id="Keysight81134A.set_frequency_divisor-145"><a href="#Keysight81134A.set_frequency_divisor-145"><span class="linenos">145</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.set_frequency_divisor-146"><a href="#Keysight81134A.set_frequency_divisor-146"><span class="linenos">146</span></a><span class="sd">            value: the target frequency divider value. The value must be one of 1, 2, 4, 8, 16, 32, 64, 128</span>
+</span><span id="Keysight81134A.set_frequency_divisor-147"><a href="#Keysight81134A.set_frequency_divisor-147"><span class="linenos">147</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_frequency_divisor-148"><a href="#Keysight81134A.set_frequency_divisor-148"><span class="linenos">148</span></a>        <span class="k">assert</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">],</span> <span class="s2">&quot;Invalid frequency divisor&quot;</span>
+</span><span id="Keysight81134A.set_frequency_divisor-149"><a href="#Keysight81134A.set_frequency_divisor-149"><span class="linenos">149</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:DIVIDER </span><span class="si">{val}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1101,27 +1101,27 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.setVoltageHigh" class="classattr">
-                                        <input id="Keysight81134A.setVoltageHigh-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.set_voltage_high" class="classattr">
+                                        <input id="Keysight81134A.set_voltage_high-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">setVoltageHigh</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">float</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_voltage_high</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">float</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.setVoltageHigh-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.set_voltage_high-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.setVoltageHigh"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.setVoltageHigh-151"><a href="#Keysight81134A.setVoltageHigh-151"><span class="linenos">151</span></a>    <span class="k">def</span> <span class="nf">setVoltageHigh</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.setVoltageHigh-152"><a href="#Keysight81134A.setVoltageHigh-152"><span class="linenos">152</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setVoltageHigh-153"><a href="#Keysight81134A.setVoltageHigh-153"><span class="linenos">153</span></a><span class="sd">        Set the voltage level of the high state of the output waveform.</span>
-</span><span id="Keysight81134A.setVoltageHigh-154"><a href="#Keysight81134A.setVoltageHigh-154"><span class="linenos">154</span></a><span class="sd">        </span>
-</span><span id="Keysight81134A.setVoltageHigh-155"><a href="#Keysight81134A.setVoltageHigh-155"><span class="linenos">155</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.setVoltageHigh-156"><a href="#Keysight81134A.setVoltageHigh-156"><span class="linenos">156</span></a><span class="sd">            value: the target voltage value in volts (V). The value must be within [0, 2] V.</span>
-</span><span id="Keysight81134A.setVoltageHigh-157"><a href="#Keysight81134A.setVoltageHigh-157"><span class="linenos">157</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.setVoltageHigh-158"><a href="#Keysight81134A.setVoltageHigh-158"><span class="linenos">158</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setVoltageHigh-159"><a href="#Keysight81134A.setVoltageHigh-159"><span class="linenos">159</span></a>        <span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">2.</span>
-</span><span id="Keysight81134A.setVoltageHigh-160"><a href="#Keysight81134A.setVoltageHigh-160"><span class="linenos">160</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:VOLTAGE</span><span class="si">{ch}</span><span class="s2">:HIGH </span><span class="si">{val}</span><span class="s2">V&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.set_voltage_high"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.set_voltage_high-151"><a href="#Keysight81134A.set_voltage_high-151"><span class="linenos">151</span></a>    <span class="k">def</span> <span class="nf">set_voltage_high</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.set_voltage_high-152"><a href="#Keysight81134A.set_voltage_high-152"><span class="linenos">152</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_voltage_high-153"><a href="#Keysight81134A.set_voltage_high-153"><span class="linenos">153</span></a><span class="sd">        Set the voltage level of the high state of the output waveform.</span>
+</span><span id="Keysight81134A.set_voltage_high-154"><a href="#Keysight81134A.set_voltage_high-154"><span class="linenos">154</span></a><span class="sd">        </span>
+</span><span id="Keysight81134A.set_voltage_high-155"><a href="#Keysight81134A.set_voltage_high-155"><span class="linenos">155</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.set_voltage_high-156"><a href="#Keysight81134A.set_voltage_high-156"><span class="linenos">156</span></a><span class="sd">            value: the target voltage value in volts (V). The value must be within [0, 2] V.</span>
+</span><span id="Keysight81134A.set_voltage_high-157"><a href="#Keysight81134A.set_voltage_high-157"><span class="linenos">157</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.set_voltage_high-158"><a href="#Keysight81134A.set_voltage_high-158"><span class="linenos">158</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_voltage_high-159"><a href="#Keysight81134A.set_voltage_high-159"><span class="linenos">159</span></a>        <span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">2.</span>
+</span><span id="Keysight81134A.set_voltage_high-160"><a href="#Keysight81134A.set_voltage_high-160"><span class="linenos">160</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:VOLTAGE</span><span class="si">{ch}</span><span class="s2">:HIGH </span><span class="si">{val}</span><span class="s2">V&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1137,27 +1137,27 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.setVoltageLow" class="classattr">
-                                        <input id="Keysight81134A.setVoltageLow-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.set_voltage_low" class="classattr">
+                                        <input id="Keysight81134A.set_voltage_low-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">setVoltageLow</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">float</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">set_voltage_low</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">value</span><span class="p">:</span> <span class="nb">float</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.setVoltageLow-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.set_voltage_low-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.setVoltageLow"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.setVoltageLow-162"><a href="#Keysight81134A.setVoltageLow-162"><span class="linenos">162</span></a>    <span class="k">def</span> <span class="nf">setVoltageLow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.setVoltageLow-163"><a href="#Keysight81134A.setVoltageLow-163"><span class="linenos">163</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setVoltageLow-164"><a href="#Keysight81134A.setVoltageLow-164"><span class="linenos">164</span></a><span class="sd">        Set the voltage level of the high state of the output waveform.</span>
-</span><span id="Keysight81134A.setVoltageLow-165"><a href="#Keysight81134A.setVoltageLow-165"><span class="linenos">165</span></a><span class="sd">        </span>
-</span><span id="Keysight81134A.setVoltageLow-166"><a href="#Keysight81134A.setVoltageLow-166"><span class="linenos">166</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.setVoltageLow-167"><a href="#Keysight81134A.setVoltageLow-167"><span class="linenos">167</span></a><span class="sd">            value: the target voltage value in volts (V). The value must be within [0, 2] V.</span>
-</span><span id="Keysight81134A.setVoltageLow-168"><a href="#Keysight81134A.setVoltageLow-168"><span class="linenos">168</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.setVoltageLow-169"><a href="#Keysight81134A.setVoltageLow-169"><span class="linenos">169</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.setVoltageLow-170"><a href="#Keysight81134A.setVoltageLow-170"><span class="linenos">170</span></a>        <span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">2.</span>
-</span><span id="Keysight81134A.setVoltageLow-171"><a href="#Keysight81134A.setVoltageLow-171"><span class="linenos">171</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:VOLTAGE</span><span class="si">{ch}</span><span class="s2">:LOW </span><span class="si">{val}</span><span class="s2">V&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.set_voltage_low"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.set_voltage_low-162"><a href="#Keysight81134A.set_voltage_low-162"><span class="linenos">162</span></a>    <span class="k">def</span> <span class="nf">set_voltage_low</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.set_voltage_low-163"><a href="#Keysight81134A.set_voltage_low-163"><span class="linenos">163</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_voltage_low-164"><a href="#Keysight81134A.set_voltage_low-164"><span class="linenos">164</span></a><span class="sd">        Set the voltage level of the high state of the output waveform.</span>
+</span><span id="Keysight81134A.set_voltage_low-165"><a href="#Keysight81134A.set_voltage_low-165"><span class="linenos">165</span></a><span class="sd">        </span>
+</span><span id="Keysight81134A.set_voltage_low-166"><a href="#Keysight81134A.set_voltage_low-166"><span class="linenos">166</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.set_voltage_low-167"><a href="#Keysight81134A.set_voltage_low-167"><span class="linenos">167</span></a><span class="sd">            value: the target voltage value in volts (V). The value must be within [0, 2] V.</span>
+</span><span id="Keysight81134A.set_voltage_low-168"><a href="#Keysight81134A.set_voltage_low-168"><span class="linenos">168</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.set_voltage_low-169"><a href="#Keysight81134A.set_voltage_low-169"><span class="linenos">169</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.set_voltage_low-170"><a href="#Keysight81134A.set_voltage_low-170"><span class="linenos">170</span></a>        <span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;=</span> <span class="mf">2.</span>
+</span><span id="Keysight81134A.set_voltage_low-171"><a href="#Keysight81134A.set_voltage_low-171"><span class="linenos">171</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:SOURCE:VOLTAGE</span><span class="si">{ch}</span><span class="s2">:LOW </span><span class="si">{val}</span><span class="s2">V&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="n">value</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1173,25 +1173,25 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.disableOutput" class="classattr">
-                                        <input id="Keysight81134A.disableOutput-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.disable_output" class="classattr">
+                                        <input id="Keysight81134A.disable_output-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">disableOutput</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">disable_output</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.disableOutput-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.disable_output-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.disableOutput"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.disableOutput-173"><a href="#Keysight81134A.disableOutput-173"><span class="linenos">173</span></a>    <span class="k">def</span> <span class="nf">disableOutput</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.disableOutput-174"><a href="#Keysight81134A.disableOutput-174"><span class="linenos">174</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.disableOutput-175"><a href="#Keysight81134A.disableOutput-175"><span class="linenos">175</span></a><span class="sd">        Disable the output of both phases of the specified channel.</span>
-</span><span id="Keysight81134A.disableOutput-176"><a href="#Keysight81134A.disableOutput-176"><span class="linenos">176</span></a>
-</span><span id="Keysight81134A.disableOutput-177"><a href="#Keysight81134A.disableOutput-177"><span class="linenos">177</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.disableOutput-178"><a href="#Keysight81134A.disableOutput-178"><span class="linenos">178</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.disableOutput-179"><a href="#Keysight81134A.disableOutput-179"><span class="linenos">179</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.disableOutput-180"><a href="#Keysight81134A.disableOutput-180"><span class="linenos">180</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2"> OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.disable_output"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.disable_output-173"><a href="#Keysight81134A.disable_output-173"><span class="linenos">173</span></a>    <span class="k">def</span> <span class="nf">disable_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.disable_output-174"><a href="#Keysight81134A.disable_output-174"><span class="linenos">174</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.disable_output-175"><a href="#Keysight81134A.disable_output-175"><span class="linenos">175</span></a><span class="sd">        Disable the output of both phases of the specified channel.</span>
+</span><span id="Keysight81134A.disable_output-176"><a href="#Keysight81134A.disable_output-176"><span class="linenos">176</span></a>
+</span><span id="Keysight81134A.disable_output-177"><a href="#Keysight81134A.disable_output-177"><span class="linenos">177</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.disable_output-178"><a href="#Keysight81134A.disable_output-178"><span class="linenos">178</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.disable_output-179"><a href="#Keysight81134A.disable_output-179"><span class="linenos">179</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.disable_output-180"><a href="#Keysight81134A.disable_output-180"><span class="linenos">180</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2"> OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1206,25 +1206,25 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.disableOutputP" class="classattr">
-                                        <input id="Keysight81134A.disableOutputP-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.disable_output_p" class="classattr">
+                                        <input id="Keysight81134A.disable_output_p-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">disableOutputP</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">disable_output_p</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.disableOutputP-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.disable_output_p-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.disableOutputP"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.disableOutputP-182"><a href="#Keysight81134A.disableOutputP-182"><span class="linenos">182</span></a>    <span class="k">def</span> <span class="nf">disableOutputP</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.disableOutputP-183"><a href="#Keysight81134A.disableOutputP-183"><span class="linenos">183</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.disableOutputP-184"><a href="#Keysight81134A.disableOutputP-184"><span class="linenos">184</span></a><span class="sd">        Disable the output of the positive phase of the specified channel.</span>
-</span><span id="Keysight81134A.disableOutputP-185"><a href="#Keysight81134A.disableOutputP-185"><span class="linenos">185</span></a>
-</span><span id="Keysight81134A.disableOutputP-186"><a href="#Keysight81134A.disableOutputP-186"><span class="linenos">186</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.disableOutputP-187"><a href="#Keysight81134A.disableOutputP-187"><span class="linenos">187</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.disableOutputP-188"><a href="#Keysight81134A.disableOutputP-188"><span class="linenos">188</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.disableOutputP-189"><a href="#Keysight81134A.disableOutputP-189"><span class="linenos">189</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:POS OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.disable_output_p"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.disable_output_p-182"><a href="#Keysight81134A.disable_output_p-182"><span class="linenos">182</span></a>    <span class="k">def</span> <span class="nf">disable_output_p</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.disable_output_p-183"><a href="#Keysight81134A.disable_output_p-183"><span class="linenos">183</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.disable_output_p-184"><a href="#Keysight81134A.disable_output_p-184"><span class="linenos">184</span></a><span class="sd">        Disable the output of the positive phase of the specified channel.</span>
+</span><span id="Keysight81134A.disable_output_p-185"><a href="#Keysight81134A.disable_output_p-185"><span class="linenos">185</span></a>
+</span><span id="Keysight81134A.disable_output_p-186"><a href="#Keysight81134A.disable_output_p-186"><span class="linenos">186</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.disable_output_p-187"><a href="#Keysight81134A.disable_output_p-187"><span class="linenos">187</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.disable_output_p-188"><a href="#Keysight81134A.disable_output_p-188"><span class="linenos">188</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.disable_output_p-189"><a href="#Keysight81134A.disable_output_p-189"><span class="linenos">189</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:POS OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1239,25 +1239,25 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.disableOutputN" class="classattr">
-                                        <input id="Keysight81134A.disableOutputN-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.disable_output_n" class="classattr">
+                                        <input id="Keysight81134A.disable_output_n-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">disableOutputN</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">disable_output_n</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.disableOutputN-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.disable_output_n-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.disableOutputN"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.disableOutputN-191"><a href="#Keysight81134A.disableOutputN-191"><span class="linenos">191</span></a>    <span class="k">def</span> <span class="nf">disableOutputN</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.disableOutputN-192"><a href="#Keysight81134A.disableOutputN-192"><span class="linenos">192</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.disableOutputN-193"><a href="#Keysight81134A.disableOutputN-193"><span class="linenos">193</span></a><span class="sd">        Disable the output of the negative phase of the specified channel.</span>
-</span><span id="Keysight81134A.disableOutputN-194"><a href="#Keysight81134A.disableOutputN-194"><span class="linenos">194</span></a>
-</span><span id="Keysight81134A.disableOutputN-195"><a href="#Keysight81134A.disableOutputN-195"><span class="linenos">195</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.disableOutputN-196"><a href="#Keysight81134A.disableOutputN-196"><span class="linenos">196</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.disableOutputN-197"><a href="#Keysight81134A.disableOutputN-197"><span class="linenos">197</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.disableOutputN-198"><a href="#Keysight81134A.disableOutputN-198"><span class="linenos">198</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:NEG OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.disable_output_n"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.disable_output_n-191"><a href="#Keysight81134A.disable_output_n-191"><span class="linenos">191</span></a>    <span class="k">def</span> <span class="nf">disable_output_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.disable_output_n-192"><a href="#Keysight81134A.disable_output_n-192"><span class="linenos">192</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.disable_output_n-193"><a href="#Keysight81134A.disable_output_n-193"><span class="linenos">193</span></a><span class="sd">        Disable the output of the negative phase of the specified channel.</span>
+</span><span id="Keysight81134A.disable_output_n-194"><a href="#Keysight81134A.disable_output_n-194"><span class="linenos">194</span></a>
+</span><span id="Keysight81134A.disable_output_n-195"><a href="#Keysight81134A.disable_output_n-195"><span class="linenos">195</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.disable_output_n-196"><a href="#Keysight81134A.disable_output_n-196"><span class="linenos">196</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.disable_output_n-197"><a href="#Keysight81134A.disable_output_n-197"><span class="linenos">197</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.disable_output_n-198"><a href="#Keysight81134A.disable_output_n-198"><span class="linenos">198</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:NEG OFF&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1272,25 +1272,25 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.enableOutput" class="classattr">
-                                        <input id="Keysight81134A.enableOutput-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.enable_output" class="classattr">
+                                        <input id="Keysight81134A.enable_output-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">enableOutput</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">enable_output</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.enableOutput-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.enable_output-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.enableOutput"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.enableOutput-200"><a href="#Keysight81134A.enableOutput-200"><span class="linenos">200</span></a>    <span class="k">def</span> <span class="nf">enableOutput</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.enableOutput-201"><a href="#Keysight81134A.enableOutput-201"><span class="linenos">201</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.enableOutput-202"><a href="#Keysight81134A.enableOutput-202"><span class="linenos">202</span></a><span class="sd">        Enable the output of both phases of the specified channel.</span>
-</span><span id="Keysight81134A.enableOutput-203"><a href="#Keysight81134A.enableOutput-203"><span class="linenos">203</span></a>
-</span><span id="Keysight81134A.enableOutput-204"><a href="#Keysight81134A.enableOutput-204"><span class="linenos">204</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.enableOutput-205"><a href="#Keysight81134A.enableOutput-205"><span class="linenos">205</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.enableOutput-206"><a href="#Keysight81134A.enableOutput-206"><span class="linenos">206</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.enableOutput-207"><a href="#Keysight81134A.enableOutput-207"><span class="linenos">207</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2"> ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.enable_output"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.enable_output-200"><a href="#Keysight81134A.enable_output-200"><span class="linenos">200</span></a>    <span class="k">def</span> <span class="nf">enable_output</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.enable_output-201"><a href="#Keysight81134A.enable_output-201"><span class="linenos">201</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.enable_output-202"><a href="#Keysight81134A.enable_output-202"><span class="linenos">202</span></a><span class="sd">        Enable the output of both phases of the specified channel.</span>
+</span><span id="Keysight81134A.enable_output-203"><a href="#Keysight81134A.enable_output-203"><span class="linenos">203</span></a>
+</span><span id="Keysight81134A.enable_output-204"><a href="#Keysight81134A.enable_output-204"><span class="linenos">204</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.enable_output-205"><a href="#Keysight81134A.enable_output-205"><span class="linenos">205</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.enable_output-206"><a href="#Keysight81134A.enable_output-206"><span class="linenos">206</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.enable_output-207"><a href="#Keysight81134A.enable_output-207"><span class="linenos">207</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2"> ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1305,25 +1305,25 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.enableOutputP" class="classattr">
-                                        <input id="Keysight81134A.enableOutputP-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.enable_output_p" class="classattr">
+                                        <input id="Keysight81134A.enable_output_p-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">enableOutputP</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">enable_output_p</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.enableOutputP-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.enable_output_p-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.enableOutputP"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.enableOutputP-209"><a href="#Keysight81134A.enableOutputP-209"><span class="linenos">209</span></a>    <span class="k">def</span> <span class="nf">enableOutputP</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.enableOutputP-210"><a href="#Keysight81134A.enableOutputP-210"><span class="linenos">210</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.enableOutputP-211"><a href="#Keysight81134A.enableOutputP-211"><span class="linenos">211</span></a><span class="sd">        Enable the output of the positive phase of the specified channel.</span>
-</span><span id="Keysight81134A.enableOutputP-212"><a href="#Keysight81134A.enableOutputP-212"><span class="linenos">212</span></a>
-</span><span id="Keysight81134A.enableOutputP-213"><a href="#Keysight81134A.enableOutputP-213"><span class="linenos">213</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.enableOutputP-214"><a href="#Keysight81134A.enableOutputP-214"><span class="linenos">214</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.enableOutputP-215"><a href="#Keysight81134A.enableOutputP-215"><span class="linenos">215</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.enableOutputP-216"><a href="#Keysight81134A.enableOutputP-216"><span class="linenos">216</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:POS ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.enable_output_p"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.enable_output_p-209"><a href="#Keysight81134A.enable_output_p-209"><span class="linenos">209</span></a>    <span class="k">def</span> <span class="nf">enable_output_p</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.enable_output_p-210"><a href="#Keysight81134A.enable_output_p-210"><span class="linenos">210</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.enable_output_p-211"><a href="#Keysight81134A.enable_output_p-211"><span class="linenos">211</span></a><span class="sd">        Enable the output of the positive phase of the specified channel.</span>
+</span><span id="Keysight81134A.enable_output_p-212"><a href="#Keysight81134A.enable_output_p-212"><span class="linenos">212</span></a>
+</span><span id="Keysight81134A.enable_output_p-213"><a href="#Keysight81134A.enable_output_p-213"><span class="linenos">213</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.enable_output_p-214"><a href="#Keysight81134A.enable_output_p-214"><span class="linenos">214</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.enable_output_p-215"><a href="#Keysight81134A.enable_output_p-215"><span class="linenos">215</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.enable_output_p-216"><a href="#Keysight81134A.enable_output_p-216"><span class="linenos">216</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:POS ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span></pre></div>
 
 
@@ -1338,25 +1338,25 @@ cc<wbr>.<a href="./../scpi.html">scpi</a><wbr>.keysight    </h1>
 
 
                             </div>
-                            <div id="Keysight81134A.enableOutputN" class="classattr">
-                                        <input id="Keysight81134A.enableOutputN-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Keysight81134A.enable_output_n" class="classattr">
+                                        <input id="Keysight81134A.enable_output_n-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">enableOutputN</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
+        <span class="name">enable_output_n</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">channel</span><span class="p">:</span> <span class="n"><a href="#Keysight81134A.Channel">Keysight81134A.Channel</a></span></span><span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Keysight81134A.enableOutputN-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Keysight81134A.enable_output_n-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Keysight81134A.enableOutputN"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.enableOutputN-218"><a href="#Keysight81134A.enableOutputN-218"><span class="linenos">218</span></a>    <span class="k">def</span> <span class="nf">enableOutputN</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
-</span><span id="Keysight81134A.enableOutputN-219"><a href="#Keysight81134A.enableOutputN-219"><span class="linenos">219</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.enableOutputN-220"><a href="#Keysight81134A.enableOutputN-220"><span class="linenos">220</span></a><span class="sd">        Enable the output of the negative phase of the specified channel.</span>
-</span><span id="Keysight81134A.enableOutputN-221"><a href="#Keysight81134A.enableOutputN-221"><span class="linenos">221</span></a>
-</span><span id="Keysight81134A.enableOutputN-222"><a href="#Keysight81134A.enableOutputN-222"><span class="linenos">222</span></a><span class="sd">        Args:</span>
-</span><span id="Keysight81134A.enableOutputN-223"><a href="#Keysight81134A.enableOutputN-223"><span class="linenos">223</span></a><span class="sd">            channel: the target channel</span>
-</span><span id="Keysight81134A.enableOutputN-224"><a href="#Keysight81134A.enableOutputN-224"><span class="linenos">224</span></a><span class="sd">        &quot;&quot;&quot;</span>
-</span><span id="Keysight81134A.enableOutputN-225"><a href="#Keysight81134A.enableOutputN-225"><span class="linenos">225</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:NEG ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
+    <a class="headerlink" href="#Keysight81134A.enable_output_n"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Keysight81134A.enable_output_n-218"><a href="#Keysight81134A.enable_output_n-218"><span class="linenos">218</span></a>    <span class="k">def</span> <span class="nf">enable_output_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="n">Channel</span><span class="p">):</span>
+</span><span id="Keysight81134A.enable_output_n-219"><a href="#Keysight81134A.enable_output_n-219"><span class="linenos">219</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.enable_output_n-220"><a href="#Keysight81134A.enable_output_n-220"><span class="linenos">220</span></a><span class="sd">        Enable the output of the negative phase of the specified channel.</span>
+</span><span id="Keysight81134A.enable_output_n-221"><a href="#Keysight81134A.enable_output_n-221"><span class="linenos">221</span></a>
+</span><span id="Keysight81134A.enable_output_n-222"><a href="#Keysight81134A.enable_output_n-222"><span class="linenos">222</span></a><span class="sd">        Args:</span>
+</span><span id="Keysight81134A.enable_output_n-223"><a href="#Keysight81134A.enable_output_n-223"><span class="linenos">223</span></a><span class="sd">            channel: the target channel</span>
+</span><span id="Keysight81134A.enable_output_n-224"><a href="#Keysight81134A.enable_output_n-224"><span class="linenos">224</span></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="Keysight81134A.enable_output_n-225"><a href="#Keysight81134A.enable_output_n-225"><span class="linenos">225</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;:OUTPUT</span><span class="si">{ch}</span><span class="s2">:NEG ON&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ch</span><span class="o">=</span><span class="n">channel</span><span class="p">))</span>
 </span></pre></div>
 
 
