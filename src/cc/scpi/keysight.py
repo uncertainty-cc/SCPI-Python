@@ -117,7 +117,7 @@ class Keysight81134A(GenericInstrument):
         SQUARE = "SQUARE"
         DATA = "DATA"
     
-    def setFunction(self, function: Function, channel: Channel):
+    def set_function(self, function: Function, channel: Channel):
         """
         Set function of both channels
 
@@ -127,7 +127,7 @@ class Keysight81134A(GenericInstrument):
         """
         self.command(":SOURCE:FUNCTION:MODE{ch} {func}".format(ch=channel, func=function))
     
-    def setFrequency(self, value: int):
+    def set_frequency(self, value: int):
         """
         Set frequency of both channels
 
@@ -137,7 +137,7 @@ class Keysight81134A(GenericInstrument):
         assert 15000000. <= value and value <= 3350000000.
         self.command(":FREQUENCY {val}".format(val=value))
     
-    def setFrequencyDivisor(self, value: int, channel: Channel):
+    def set_frequency_divisor(self, value: int, channel: Channel):
         """
         Set the frequency divider of both channels
         
@@ -147,7 +147,7 @@ class Keysight81134A(GenericInstrument):
         assert value in [1, 2, 4, 8, 16, 32, 64, 128], "Invalid frequency divisor"
         self.command(":OUTPUT{ch}:DIVIDER {val}".format(ch=channel, val=value))
     
-    def setVoltageHigh(self, value: float, channel: Channel):
+    def set_voltage_high(self, value: float, channel: Channel):
         """
         Set the voltage level of the high state of the output waveform.
         
@@ -158,7 +158,7 @@ class Keysight81134A(GenericInstrument):
         assert 0. <= value and value <= 2.
         self.command(":SOURCE:VOLTAGE{ch}:HIGH {val}V".format(ch=channel, val=value))
 
-    def setVoltageLow(self, value: float, channel: Channel):
+    def set_voltage_low(self, value: float, channel: Channel):
         """
         Set the voltage level of the high state of the output waveform.
         
@@ -169,7 +169,7 @@ class Keysight81134A(GenericInstrument):
         assert 0. <= value and value <= 2.
         self.command(":SOURCE:VOLTAGE{ch}:LOW {val}V".format(ch=channel, val=value))
     
-    def disableOutput(self, channel: Channel):
+    def disable_output(self, channel: Channel):
         """
         Disable the output of both phases of the specified channel.
 
@@ -178,7 +178,7 @@ class Keysight81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch} OFF".format(ch=channel))
 
-    def disableOutputP(self, channel: Channel):
+    def disable_output_p(self, channel: Channel):
         """
         Disable the output of the positive phase of the specified channel.
 
@@ -187,7 +187,7 @@ class Keysight81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch}:POS OFF".format(ch=channel))
 
-    def disableOutputN(self, channel: Channel):
+    def disable_output_n(self, channel: Channel):
         """
         Disable the output of the negative phase of the specified channel.
 
@@ -196,7 +196,7 @@ class Keysight81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch}:NEG OFF".format(ch=channel))
 
-    def enableOutput(self, channel: Channel):
+    def enable_output(self, channel: Channel):
         """
         Enable the output of both phases of the specified channel.
 
@@ -205,7 +205,7 @@ class Keysight81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch} ON".format(ch=channel))
 
-    def enableOutputP(self, channel: Channel):
+    def enable_output_p(self, channel: Channel):
         """
         Enable the output of the positive phase of the specified channel.
 
@@ -214,7 +214,7 @@ class Keysight81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch}:POS ON".format(ch=channel))
 
-    def enableOutputN(self, channel: Channel):
+    def enable_output_n(self, channel: Channel):
         """
         Enable the output of the negative phase of the specified channel.
 
