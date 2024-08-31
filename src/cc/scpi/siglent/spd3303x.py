@@ -1,7 +1,7 @@
 
-from .generic_instrument import GenericInstrument
+from ..generic_instrument import GenericInstrument
 
-class SiglentSPD3303X(GenericInstrument):
+class SPD3303X(GenericInstrument):
     """
     Siglent SPD3303X Programmable DC Power Supply
 

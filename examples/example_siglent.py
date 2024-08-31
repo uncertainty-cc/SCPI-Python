@@ -1,8 +1,8 @@
 import time
 
-from cc.scpi import SiglentSPD3303X
+from cc.scpi.siglent import SPD3303X
 
-device = SiglentSPD3303X("128.32.62.100")
+device = SPD3303X("128.32.62.100")
 device.connect()
 
 print(device.get_instrument_identification())
