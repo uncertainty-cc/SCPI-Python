@@ -24,7 +24,7 @@ class K81134A(GenericInstrument):
         SQUARE = "SQUARE"
         DATA = "DATA"
     
-    def set_function(self, function: Function, channel: Channel):
+    def set_function(self, function: Function, channel: Channel) -> None:
         """
         Set function of both channels
 
@@ -34,7 +34,7 @@ class K81134A(GenericInstrument):
         """
         self.command(":SOURCE:FUNCTION:MODE{ch} {func}".format(ch=channel, func=function))
     
-    def set_frequency(self, value: int):
+    def set_frequency(self, value: int) -> None:
         """
         Set frequency of both channels
 
@@ -44,7 +44,7 @@ class K81134A(GenericInstrument):
         assert 15000000. <= value and value <= 3350000000.
         self.command(":FREQUENCY {val}".format(val=value))
     
-    def set_frequency_divisor(self, value: int, channel: Channel):
+    def set_frequency_divisor(self, value: int, channel: Channel) -> None:
         """
         Set the frequency divider of both channels
         
@@ -54,7 +54,7 @@ class K81134A(GenericInstrument):
         assert value in [1, 2, 4, 8, 16, 32, 64, 128], "Invalid frequency divisor"
         self.command(":OUTPUT{ch}:DIVIDER {val}".format(ch=channel, val=value))
     
-    def set_voltage_high(self, value: float, channel: Channel):
+    def set_voltage_high(self, value: float, channel: Channel) -> None:
         """
         Set the voltage level of the high state of the output waveform.
         
@@ -65,7 +65,7 @@ class K81134A(GenericInstrument):
         assert 0. <= value and value <= 2.
         self.command(":SOURCE:VOLTAGE{ch}:HIGH {val}V".format(ch=channel, val=value))
 
-    def set_voltage_low(self, value: float, channel: Channel):
+    def set_voltage_low(self, value: float, channel: Channel) -> None:
         """
         Set the voltage level of the high state of the output waveform.
         
@@ -76,7 +76,7 @@ class K81134A(GenericInstrument):
         assert 0. <= value and value <= 2.
         self.command(":SOURCE:VOLTAGE{ch}:LOW {val}V".format(ch=channel, val=value))
     
-    def disable_output(self, channel: Channel):
+    def disable_output(self, channel: Channel) -> None:
         """
         Disable the output of both phases of the specified channel.
 
@@ -85,7 +85,7 @@ class K81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch} OFF".format(ch=channel))
 
-    def disable_output_p(self, channel: Channel):
+    def disable_output_p(self, channel: Channel) -> None:
         """
         Disable the output of the positive phase of the specified channel.
 
@@ -94,7 +94,7 @@ class K81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch}:POS OFF".format(ch=channel))
 
-    def disable_output_n(self, channel: Channel):
+    def disable_output_n(self, channel: Channel) -> None:
         """
         Disable the output of the negative phase of the specified channel.
 
@@ -103,7 +103,7 @@ class K81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch}:NEG OFF".format(ch=channel))
 
-    def enable_output(self, channel: Channel):
+    def enable_output(self, channel: Channel) -> None:
         """
         Enable the output of both phases of the specified channel.
 
@@ -112,7 +112,7 @@ class K81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch} ON".format(ch=channel))
 
-    def enable_output_p(self, channel: Channel):
+    def enable_output_p(self, channel: Channel) -> None:
         """
         Enable the output of the positive phase of the specified channel.
 
@@ -121,7 +121,7 @@ class K81134A(GenericInstrument):
         """
         self.command(":OUTPUT{ch}:POS ON".format(ch=channel))
 
-    def enable_output_n(self, channel: Channel):
+    def enable_output_n(self, channel: Channel) -> None:
         """
         Enable the output of the negative phase of the specified channel.
 

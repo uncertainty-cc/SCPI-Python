@@ -23,7 +23,7 @@ class K33600A(GenericInstrument):
         CH1 = "1"
         CH2 = "2"
     
-    def set_function(self, function: Function, channel: Channel):
+    def set_function(self, function: Function, channel: Channel) -> None:
         """
         Set function of both channels
 
@@ -33,7 +33,7 @@ class K33600A(GenericInstrument):
         """
         self.command("SOURCE{ch}:FUNCTION {func}".format(ch=channel, func=function))
     
-    def set_frequency(self, value: float, channel: Channel):
+    def set_frequency(self, value: float, channel: Channel) -> None:
         """
         Set frequency of both channels
         
@@ -43,7 +43,7 @@ class K33600A(GenericInstrument):
         """
         self.command("SOURCE{ch}:FREQUENCY {val}".format(ch=channel, val=value))
     
-    def set_high_voltage(self, value: float, channel: Channel):
+    def set_high_voltage(self, value: float, channel: Channel) -> None:
         """
         Set the voltage level of the high state of the output waveform.
 
@@ -53,7 +53,7 @@ class K33600A(GenericInstrument):
         """
         self.command("SOURCE{ch}:VOLTAGE:HIGH {val}".format(ch=channel, val=value))
     
-    def set_low_voltage(self, value: float, channel: Channel):
+    def set_low_voltage(self, value: float, channel: Channel) -> None:
         """
         Set the voltage level of the low state of the output waveform.
 
@@ -63,7 +63,7 @@ class K33600A(GenericInstrument):
         """
         self.command("SOURCE{ch}:VOLTAGE:LOW {val}".format(ch=channel, val=value))
     
-    def set_output_load(self, value: float, channel: Channel):
+    def set_output_load(self, value: float, channel: Channel) -> None:
         """
         Set the output load impedance.
 
@@ -75,7 +75,7 @@ class K33600A(GenericInstrument):
             value = "INFINITY"
         self.command("OUTPUT{ch}:LOAD {val}".format(ch=channel, val=value))
 
-    def disable_output(self, channel: Channel):
+    def disable_output(self, channel: Channel) -> None:
         """
         Disable the output of the specified channel.
 
@@ -84,7 +84,7 @@ class K33600A(GenericInstrument):
         """
         self.command("OUTPUT{ch} OFF".format(ch=channel))
 
-    def enable_output(self, channel: Channel):
+    def enable_output(self, channel: Channel) -> None:
         """
         Enable the output of the specified channel.
 
